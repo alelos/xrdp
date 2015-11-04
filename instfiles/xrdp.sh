@@ -17,7 +17,7 @@
 # Description: starts xrdp
 ### END INIT INFO
 
-SBINDIR=/usr/local/sbin
+SBINDIR=/usr/bin
 LOG=/dev/null
 CFGDIR=/etc/xrdp
 

@@ -26,6 +26,18 @@ wm_start()
     exit 0
   fi
 
+  # arch user
+  if [ -r ~/.xinitrc ]; then
+      . ~/.xinitrc
+      exit 0
+  fi
+
+  # arch system
+  if [ -r /etc/X11/xinit/xinitrc ]; then
+      . /etc/X11/xinit/xinitrc
+      exit 0
+  fi
+
   xterm
 }
 
